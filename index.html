@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/904fa8d934.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>JPI Website || MP1</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-xl bg-body-tertiary" id="topnavbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+        <img id="icon" src="JpiFiles/JpiIcon.png" /></a>
+        <button
+          class="navbar-toggler collapsed d-flex d-xl-none flex-column justify-content-around"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="about.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About JPI
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="about.html">School Profile</a></li>
+                <li>
+                  <a class="dropdown-item" href="vision.html">Vision and Mission</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Logo and Symbols</a></li>
+                <li><a class="dropdown-item" href="#">Campus Branch</a></li>
+                <li><a class="dropdown-item" href="#">Maps</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Awards and Recognition</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Citizen Charter</a></li>
+                <li><a class="dropdown-item" href="#">Memorandum Orders</a></li>
+                <li><a class="dropdown-item" href="#">Office Memorandum</a></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Strategic Performance Management System</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Admission
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Strand Offer</a></li>
+                <li><a class="dropdown-item" href="enrollment.html">Enrollment Section</a></li>
+                <li><a class="dropdown-item" href="#">Job Vacancies</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Academic
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Academic Programs</a></li>
+                <li><a class="dropdown-item" href="#">E-class Portal</a></li>
+                <li><a class="dropdown-item" href="#">School Updates</a></li>
+                <li><a class="dropdown-item" href="#">Downloads</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Students
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Student Services</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Student Organizations</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Student Publication</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Student Council</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- header  -->
+
+    <header id="header">
+      <div class="container">
+        <div class="row header-body">
+          <div class="header-title col-md-12 col-lg-10">
+            <span class="header-name text-uppercase pt-2 pb-2"
+              >J<small>apan-</small> P<small>hilippines</small> I<small
+                >nstitute</small
+              > O<small>f</small> T<small>echnology</small>
+              <h6 id="title-quote" class="fst-italic">
+                "Quality and Equal Education for All"
+              </h6>
+            </span>
+          </div>
+          <div class="btn-enroll col-md-6  col-lg-2 pt-2">
+            <button type="button" class="button"><a href="form.html">Enroll Now</a></button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Carousel  -->
+
+    <div class="row mb-5">
+      <div class="col-md-12">
+        <div id="mycarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="d-block w-100"
+                src="JpiFiles/Banner.png"
+                alt="First slide"
+              />
+              <div class="carousel__caption carousel-caption">
+                <a href=""
+                  ><i class="fa-sharp fa-solid fa-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="JpiFiles/c1.png"
+                alt="Second slide"
+              />
+              <div class="carousel__caption carousel-caption">
+                <a href=""
+                  ><i class="fa-sharp fa-solid fa-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#mycarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#mycarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main  -->
+    <main id="main-body">
+      <!-- JPI Branches -->
+      <section class="sec-branch">
+        <div id="campus" class="col-md-12 col-sm-12 text-center">
+          <h1 class="title">JPI CAMPUS BRANCH</h1>
+          <p class="title">"Come and be part of JPI family"</p>
+        </div>
+        <div class="container-fluid p-5 mt-5">
+          <div class="row">
+            <div class="col-md-6 col-lg-6  col-xs-6 col-xl-3">
+              <div class="card branch-img">
+                <a href="https://www.facebook.com/JPITechnologies"
+                  ><img
+                    src="JpiFiles/picbanner.jpg"
+                    class="img-fluid rounded mx-auto d-block"
+                    alt="Main Branch"
+                /></a>
+                <div class="card-body">
+                  <h4 class="card-text text-center title">Main Branch</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6  col-xs-6 col-xl-3 ">
+              <div class="card branch-img">
+                <a href="https://www.facebook.com/jpi.muzon"
+                  ><img
+                    src="JpiFiles/muzon.jpg"
+                    class="img-fluid rounded mx-auto d-block"
+                    alt="Muzon Branch"
+                /></a>
+                <div class="card-body">
+                  <h4 class="card-text text-center title">Muzon Branch</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6  col-xs-6 col-xl-3">
+              <div class="card branch-img">
+                <a
+                  href="https://www.facebook.com/jpitech.sanjosedelmonteofficial"
+                  ><img
+                    src="JpiFiles/San Jose.jpg"
+                    class="img-fluid rounded mx-auto d-block"
+                    alt="San Jose Branch"
+                /></a>
+                <div class="card-body">
+                  <h4 class="card-text text-center title">San Jose Branch</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6  col-xs-6 col-xl-3">
+              <div class="card branch-img">
+                <a href="https://www.facebook.com/jpiplaridelcampus"
+                  ><img
+                    src="JpiFiles/Plaridel.jpg"
+                    class="img-fluid rounded mx-auto d-block"
+                    alt="Plaridel Branch"
+                /></a>
+                <div class="card-body" id="plate">
+                  <h4 class="card-text text-center title">Plaridel Branch</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  JPI updates -->
+      <section id="jpi-updates" class="index-contents">
+        <div class="container">
+          <div class="row news-body">
+            <!-- video -->
+            <article class="mt-4 col-md-6 col-xs-12 col-video content">
+              <!-- <video src=""> -->
+              <div class="title">
+                <h3 >Video Clips</h3>
+                <hr />
+              </div>
+              <div class="video-clips">
+                <iframe
+                  class="staticvideo"
+                  src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fjpitech.sanjosedelmonteofficial%2Fvideos%2F393419989254358%2F&show_text=false&width=560&t=0"
+                  width="560"
+                  height="314"
+                  style="border: none; overflow: hidden"
+                  scrolling="no"
+                  frameborder="0"
+                  allowfullscreen="true"
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                  allowfullscreen="true"
+                ></iframe>
+              </div>
+              
+              <!--  Updates  -->
+              <div class="title" id="updates">
+                <h3>JPIans UPDATES</h3>
+              </div>
+              <div>
+                <hr />
+              </div>
+              <div class="container">
+                <div class="row mt-1 justify-content-around">
+                  <div class="col-sm-5 col-xs-6 col-lg-5 card update-card ">
+                    <img class="update-img card-img-top" src="JpiFiles/t4.jpg" />
+                    <div class="card-body text-truncate update-body">
+                      <a class="text-decoration-none" href="updates.html">
+                      <h6 class="text-success"> "Taekwondo Silver Medalist"</h6></a>
+                      <small class="card-text">
+                        Back to back to the top! The little giant on the rampage again getting the second place for the honor and glory
+                      </small>
+                    </div>
+                  </div>
+                  <div class="col-sm-5 col-xs-6 col-lg-5 card update-card">
+                    <img class="update-img card-img-top" src="JpiFiles/t6.jpg"/>
+                    <div class="card-body text-truncate update-body">
+                      <a class="text-decoration-none" href="updates.html">
+                      <h6 class="text-success"> "Second Placer!"</h6></a>
+                      <small class="card-text">
+                        Good job! ☺️👏🫶
+                      </small>
+                    </div>
+                  </div>
+                  <div class="col-sm-5 col-xs-6 col-lg-5 card update-card">
+                    <img class="update-img card-img-top" src="JpiFiles/t7.jpg"/>
+                    <div class="card-body text-truncate update-body">
+                      <a class="text-decoration-none" href="updates.html">
+                      <h6 class=" text-success">
+                        JPIans Basketball Team
+                      </h6></a>
+                      <small class="card-text">
+                        The incoming event for almost 3 years of pandemic BuLprisa is coming! Time to show of what JPI basketball team we are made of.
+                      </small>
+                   </div>
+                  </div>
+                  <div class="col-sm-5 col-xs-6 col-lg-5 card update-card">
+                    <img class="update-img card-img-top" src="JpiFiles/t5.jpg"/>
+                    <div class="card-body text-truncate update-body">
+                      <a class="text-decoration-none" href="updates.html">
+                      <h6 class="text-success">
+                        JPIans Volleyball Team
+                      </h6></a>
+                      <small class="card-text">
+                        The most lively team ever made of. Will they get the top?
+                      </small>
+                   </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- About JPI  -->
+            <article id="about" class="col-md-6 mt-4 col-xs-12">
+              <div class="row">
+                <div class="title pb-2">
+                  <h3>About JPI</h3>
+                </div>
+                <hr class="pb-1">
+                <div class="card about-card" style="width: auto;">
+                  <img src="JpiFiles/jpi4.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="mt-5 card-title">"The Story Untold JPI History"</h5>
+                    <p class="card-text text-truncate"> The Japan-Philippines Institute of Technology in Santa Maria
+                      Bulacan was established in the year 2007. And in the year 2016
+                      the school is recognize as a K-12 school or so called Senior
+                      High School. The school was established as a joint venture
+                      between the Japanese Ministry of Education, Culture, Sports,
+                      Science and Technology and the Philippine Department of
+                      Education.</p>
+                    <a href="#" class="btn btn-success stretched-link ps-3 pe-3">See More   <i class="fa fa-chevron-right fa-faw"></i
+                      ></a>
+                  </div>
+                </div>
+                <div class="container col-md-12">
+                  <div class="design-line col-md-9 mb-3">
+                  </div>
+                  <div class="appreciation-corner">
+                    <div class=" pic-corner pb-3"><img style="border: 3px solid rgb(16, 134, 14);" src="JpiFiles/pic-corner.png" alt=""></div>
+                    <h1 class="text-success fw-bold text-center">記事を読んでいただきありがとうございます!
+                      </h1>
+                    <p class="text-success fw-bold text-center"><em>Kiji o yonde itadaki arigatōgozaimasu!💚💛</em></p>
+                  </div>
+                </div>
+            </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- services -->
+      <section id="services">
+        <div class="row pt-5
+        ">
+          <div class="col-md-3 col-sm-1 service-box">
+            <a class="text-decoration-none" href="">
+              <div class="service-icon text-center">
+                <i id="sercon" class="fa-2x fa-sharp fa-regular fa-pen-to-square align-middle"></i>
+              </div>
+              <div class="service-content text-center">
+                <h3><strong>Apply</strong></h3>  
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-1 service-box">
+            <a class="text-decoration-none" href="">
+              <div class="service-icon text-center">
+                <i id="sercon" class="fa-2x fa-sharp fa-solid fa-cubes"></i>
+              </div>
+              <div class="service-content text-center">
+                <h3><strong>JPI Stability and Development program</strong></h3>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-1 service-box">
+            <a class="text-decoration-none" href="">
+              <div class="service-icon text-center">
+                <i id="sercon" class="fa-2x fa-solid fa-building-columns"></i>
+              </div>
+              <div class="service-content text-center">
+                <h3><strong>School Life</strong></h3>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-1 service-box text-center">
+            <a class="text-decoration-none" href="">
+              <div class="service-icon">
+                <i id="sercon" class="fa-2x fa-sharp fa-solid fa-star"></i>
+              </div>
+              <div class="service-content text-center">
+                <h3><strong>Events</strong></h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- news section  -->
+      <section class="news-section">
+        <div class="container">
+          <div class="col-md-12 title">
+            <h3 class="text-uppercase title" >Daily News</h3>
+            <hr class="margin-left: auto;" />
+          </div>
+          <div class="row g-0 bg-body-secondary position-relative">
+            <div class="col-md-6 mb-md-0 p-md-4">
+              <img src="JpiFiles/t2.jpg" class="w-100" alt="...">
+            </div>
+            <div class="col-md-6 p-4 ps-md-0">
+              <h5 class="text-bold">ENROLLMENT IS ONGOING!</h5>
+              <p>SENIOR HIGH SCHOOL EARLY REGISTRATION & ENROLMENT ONGOING FOR S.Y. 2023-2024
+                Come, Visit us, and Enroll!
+                Don't miss this chance to make your dreams come true and achieve your objectives. Whether you're a new student or a returnee.
+                And join our Nihongo club and explore the fascinating world of the Japanese language and culture. 📢</p>
+              <a href="enrollment.html" class="text-decoration-none stretched-link text-success">Learn more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container  mb-4"><hr></div>
+
+        <div class="container">
+          <div class="row justify-content-around">
+            <div class="col-md-3 col-sm-5 mt-4">
+              <div class="card clips">
+                <div class="card-body clip-card">
+                  <div class="card-title">
+                    <h3>Ohaiyo!</h3>
+                  </div>
+                  <div class="card-text ">
+                    <p class="text-truncate">Congratulations Kathleen Lonjawon Ausejo 
+                      JPI FAMILY IS SO PROUD OF YOU ☺️🥰</p>
+                    <a href="#" class="link-news text-decoration-none stretched-link text-success">Learn more</a> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-3 col-sm-5 mt-4">
+              <div class="card clips">
+                <div class="card-body clip-card">
+                  <div class="card-title">
+                    <h3>Konnichiwa!</h3>
+                  </div>
+                  <div class="card-text">
+                    <p class="text-truncate">We are now accepting early enrollees for School Year 2023-2024
+                      📌Just click the link below 👇 </p>
+                    <a href="enrollment.html" class="link-news text-decoration-none stretched-link text-success">Learn more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+         
+            <div class="col-md-3 col-sm-5 mt-4">
+              <div class="card clips">
+                <div class="card-body clip-card">
+                  <div class="card-title">
+                    <h3>Konbanwa!</h3>
+                  </div>
+                  <div class="card-text">
+                    <p class="text-truncate">📢📢URGENT HIRING 📢📢 
+                      ✔️SHS MATH TEACHER 
+                      ✔️  IT/COMPUTER TEACHER</p>
+                    <a href="#" class="link-news text-decoration-none stretched-link text-success">Learn more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-3 col-sm-5 mt-4">
+              <div class="card clips">
+                <div class="card-body clip-card">
+                  <div class="card-title">
+                    <h3>Arigatou!</h3>
+                  </div>
+                  <div class="card-text">
+                    <p class="text-truncate">Thank you for your greetings 🙂 BGYO! AKI!</p>
+                    <a href="#" class="link-news text-decoration-none stretched-link text-success">Learn more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+       </section>
+
+       <div class="read-more-cal container">
+        <div class="row">
+          <div class="col-md-12 mt-3 mb-5">
+            <a href="" class="btn btn-success pull-right"
+              >View News <i class="fa fa-chevron-right fa-faw"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+        </div>
+    
+     <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4"></div>
+        </div>
+      </div>
+     </section>
+
+      <!-- Events Calendar -->
+      <section id="calendar" class="index-contents mt-5 mb-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 title">
+              <h3 text-green text-center>JPI CALENDAR</h3>
+              <hr class="margin-left: auto;" />
+            </div>
+          </div>
+          <div class="row calendar-dates">
+            <div class="col-md-3 col-sm-6 date-event">
+              <div class="event-date center-block">
+                <span class="event-month">April</span>
+                <span class="event-day">01</span>
+              </div>
+              <div class="content-day title">
+                <h4>Enrollment Period</h4>
+                <small class="text-muted">Day</small>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 date-event">
+              <div class="event-date center-block">
+                <span class="event-month">June</span>
+                <span class="event-day">01</span>
+              </div>
+              <div class="content-day title">
+                <h4>Academic Break</h4>
+                <small class="text-muted">Day</small>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 date-event">
+              <div class="event-date center-block">
+                <span class="event-month">August</span>
+                <span class="event-day">09</span>
+              </div>
+              <div class="content-day title">
+                <h4>Classes Begin</h4>
+                <small class="text-muted">Day</small>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 date-event">
+              <div class="event-date center-block">
+                <span class="event-month">August</span>
+                <span class="event-day">15</span>
+              </div>
+              <div class="content-day title">
+                <h4>Bulacan Foundation Day</h4>
+                <small class="text-muted">Day</small>
+              </div>
+            </div>
+          </div>
+          <div class="read-more-cal">
+            <div class="row">
+              <div class="col-md-12 mt-3 mb-5">
+                <a href="" class="btn btn-success pull-right"
+                  >View Full Calendar <i class="fa fa-chevron-right fa-faw"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer  -->
+
+    <footer id="more-links">
+      <div class="container justify-content-center">
+          <div class="row">
+              <div class="col-md-4 col-xs-12 text-white">
+                  <!--CONTACT-->
+                  <div class="page-header ">
+                      <h3><i class="fa fa-envelope fa-fw"></i> CONTACT US</h3>
+                  </div>
+                  <hr class="margin-left: auto;" />
+
+                  <address class="text-white address">
+                      <span class="fa-stack fa-lg text-light">
+                          <i class="fa fa-square fa-stack-2x text-red"></i>
+                          <i class="fa fa-map-marker fa-stack-1x" style="color:#333333;"></i>
+                      </span> &nbsp; 49 Dr. T Santiago, Poblacion, Santa Maria, Bulacan
+                      <span class="clearfix"></span>
+                      <span class="fa-stack fa-lg text-light">
+                          <i class="fa fa-square fa-stack-2x text-red"></i>
+                          <i class="fa fa-phone fa-stack-1x" style="color:#333333;"></i>
+                      </span> &nbsp; +63 935-1734-862 / 044-7980-329
+
+                      <span class="clearfix"></span>
+                      <span class="fa-stack fa-lg text-white">
+                          <i class="fa fa-square fa-stack-2x text-white"></i>
+                          <i class="fa fa-at fa-stack-1x" style="color:#333333;"></i>
+                      </span> &nbsp; <a href="jpi.smayame@gmail.com" class="text-decoration-none text-white footer-links">jpi.smayame@gmail.com</a>
+                  </address>
+              </div>
+                  <!--QUICK LINKS-->
+              <div class="col-md-4 col-xs-12 text-white">
+                  <div class="page-header">
+                      <h3><i class="fa fa-external-link fa-fw"></i> QUICK LINKS</h3>
+                  </div>
+                  <hr class="margin-left: auto;" />
+  
+                  <ul class=" list-unstyled quick-links col-xs-6">
+                      <li><a class="footer-links" href="updates.html">Announcements</a></li>
+                      <li><a class="footer-links" href="updates.html">News</a></li>
+                      <li><a class="footer-links" href="">Quality Policy</a></li>
+                      <li><a class="footer-links" href="">Job Vacancies</a></li>
+                      <li><a class="footer-links" href="">School Awards</a></li>
+                  </ul>
+              </div>
+  
+              <div class="col-md-4 col-xs-12 text-white">
+                  <!--ACADEMICS-->
+                  <div class="page-header">
+                      <h3><i class="fa fa-graduation-cap fa-fw"></i> ACADEMICS</h3>
+                  </div>
+                  <hr class="margin-left: auto;" />
+  
+                  <ul class="list-unstyled quick-links col-xs-6">
+                      <li><a class="footer-links" href="">Strands Offered</a></li>
+                      <li><a class="footer-links" href="">Undergraduate</a></li>
+                      <li><a class="footer-links" href="">Graduate</a></li>
+                      <li><a class="footer-links" href="">University Calendar</a></li>
+                      <li><a class="footer-links" href="enrollment.html">Enrollment</a></li>
+                  </ul>
+              </div>
+          </div>
+  
+          <div class="row">
+              <div class="col-md-4 col-xs-12 text-white pt-2">
+                  <!--DOWNLOADS-->
+                  <div class="page-header">
+                      <h3><i class="fa fa-globe fa-fw"></i> LINKAGES</h3>
+                  </div>
+                  <hr class="margin-left: auto;" />
+                  <ul class="list-unstyled quick-links col-xs-6">
+                      <li><a class="footer-links" href="about.html">JPI Technologies</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-4 col-xs-12 text-white pt-2">
+                  <!--DOWNLOADS-->
+                  <div class="page-header">
+                      <h3><i class="fa fa-download fa-fw"></i> DOWNLOADS</h3>
+                  </div>
+                  <hr class="margin-left: auto;" />
+                  <ul class="list-unstyled quick-links col-xs-6">
+                      <li><a class="footer-links" href="">For Students</a></li>
+                      <li><a class="footer-links" href="">For Employees</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-4 col-xs-12 text-white pt-2">
+                <!--DOWNLOADS-->
+                <div class="page-header">
+                    <h3><i class="fa-solid fa-cloud-arrow-up"></i> Portal</h3>
+                </div>
+                <hr class="margin-left: auto;" />
+                <ul class="list-unstyled quick-links col-xs-6">
+                    <li><a class="footer-links" href="">E-Classroom</a></li>
+                </ul>
+            </div>
+          </div>
+      </div>
+  
+      <div class="container pt-3">
+          <div class="my-info text-center">
+              <div class="row">
+                  <div class="col-md-6">
+                      <p>&copy; 2023-2024 Immanuel L. Cañeca || WD63</p>
+                  </div>
+                  <div class="col-md-6 text-right">
+                      <p>Developed by I.Cañeca </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </footer>
+  
+    <!-- back to top btn  -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+
+
+
+
+    <!-- back to top js  -->
+
+    <script>
+      let mybutton = document.getElementById("myBtn");
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

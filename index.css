@@ -1,0 +1,717 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red;    */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #222222;
+}
+
+/* navbar  */
+
+#topnavbar {
+    padding: 7px;
+}
+
+.nav-link {
+    padding: 0 15px !important;
+    transition: 0.5s ease-in;
+}
+
+.nav-link:hover {
+    color: #21540c !important;
+    font-weight: 500 !important;
+}
+
+.header-title {
+    display: flex;
+
+}
+
+#icon{
+    height: 50px;
+    width: 60px;
+    cursor: pointer;
+    position: relative;
+    margin: -10px 20px 0 10px;
+}
+
+.navbar-toggler {
+    width: 17px;
+    height: 17px;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+    position: relative;
+}
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: rgb(7, 80, 7);
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.middle-bar {
+    margin-top: 0px;
+}
+
+.navbar-toggler.collapsed .top-bar {
+    position: absolute;
+    top: 0px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    position: absolute;
+    top: 20px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler .top-bar {
+    top: inherit;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    top: inherit;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    top: inherit;
+    transform: rotate(-135deg);
+}
+
+.navbar-toggler .collapsed .toggler-icon {
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(9,121,35,1) 35%, rgba(240,255,0,1) 100%);
+}
+ 
+/* header  */
+
+#header {
+    border: none;
+    font-size: 13px;
+    font-weight: 300;
+    position: relative;
+    min-height: 45px;
+    background: rgb(7, 80, 7) !important;
+    position: relative;
+    color: #fff;
+    padding: 30px 0 40px 0;
+    border-top: 4px solid greenyellow;
+    border-bottom: 4px solid greenyellow;
+}
+
+.header-name {
+    font-size: 30px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-enroll {
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+    font-size: larger;
+}
+
+.btn-enroll button {
+    border: 2px solid #fff;
+    box-shadow: 0px -2px 5px 2px inset;
+    border-radius: 10px;
+    padding: 15px 30px;
+}
+
+.btn-enroll button a {
+    font-weight: 600;
+    color: rgb(7, 80, 7);
+}
+
+.btn-enroll .button:hover {
+    background-color: greenyellow;
+}
+    
+ /* carousel  */
+
+.carousel__caption {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.carousel__caption a i {
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.carousel__caption a i:hover {
+    background: #fff;
+    color: rgb(91, 121, 88);
+}
+ 
+/* main  */
+
+/* JPI branch */
+.sec-branch {
+    margin: 10rem 0 0 0 !important;
+}
+
+.sec-branch h1 {
+    font-size: 50px;
+}
+
+.branch-img {
+    margin-bottom: 5rem;
+    transition: transform 0.5s;
+}
+
+.branch-img:hover {
+    transform: translateY(-10px);
+    background: linear-gradient(rgba(18, 170, 12, 0.462), rgb(252, 241, 28));
+    box-shadow: -1px -2px 10px 0px inset rgb(7, 80, 7);
+}
+
+.title {
+    color: rgb(7, 80, 7);
+    font-weight: 500;
+}
+
+.branch-img a img {
+    height: 18rem;
+}
+
+ /* jpi updates  */
+
+.col-video {
+    position: relative;
+    width: 100%;
+}
+
+.video-clips {
+    height: 380px;
+}
+
+.staticvideo {
+    width: 100% !important; 
+    height: 100% !important;
+}
+
+.update-card {
+    width: 18rem;
+    margin-top: 40px !important;
+    box-shadow: 0 5px 10px rgba(12, 16, 31, 0.4);
+    transition: 0.6s;
+}
+
+.update-card:hover {
+    transform: scale(1.1);
+}
+
+.update-body {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* about  */
+
+.about-card {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-shadow: 0 5px 10px rgba(12, 16, 31, 0.4);
+    transition: 0.6s;
+}
+
+.about-card:hover {
+    transform: translateX(10px);
+}
+
+.pic-corner {
+    display: flex;
+    justify-content: center;
+}
+
+.appreciation-corner img {
+    width: 20rem;
+    display: flex;
+    margin-top: 20px;
+}
+
+/* services */
+
+#services {
+    margin: 5rem 10rem;
+}
+
+.service-box {
+    display: flex;
+    justify-content: center;
+}
+
+.service-icon {
+    display: flex;
+    justify-content: center;
+}
+
+#sercon {
+    padding: 15px;
+    border: 4px solid rgb(7, 80, 7);
+    border-radius: 50%; 
+    color: rgb(7, 80, 7);
+}
+
+#sercon:hover {
+    background: rgb(7, 80, 7);
+    color: #fff;
+}
+
+.service-content h3 strong {
+    font-size: 20px;
+    color: rgb(7, 80, 7);
+}
+
+/* calendar  */
+
+.date-event {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-details {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.content-day h4 {
+    font-size: larger;
+    font-weight: 700;
+}
+
+.center-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(7, 80, 7);
+    padding: 10px 40px;
+}
+
+.event-month {
+    font-weight: 700;
+}
+
+.event-day {
+    font-weight: 900;
+    font-size: 60px;
+}
+
+/* news  */
+.link-news {
+    font-size: 10px;
+}
+
+.clip-card {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-shadow: 0 5px 10px rgba(12, 16, 31, 0.4);
+}
+
+.clips {
+    transition: 0.6s;
+}
+
+.clips:hover {
+    transform: translateY(-10px);
+}
+
+/* footer  */
+#more-links {
+    background: rgb(7, 80, 7);
+    padding-top: 20px;
+    border-top: 3px solid greenyellow;
+}
+
+.footer-links {
+    text-decoration: none;
+    color: white;
+}
+
+.my-info {
+    color: rgb(112, 147, 77);
+    font-size: 12px;
+}
+
+.page-header h3 i:hover {
+    color: yellowgreen;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ /* About Page  */
+#main-about {
+    margin: 9rem 2rem 2rem;
+}
+
+.contents-lobby a p {
+    color: #21540c;
+    transition: ease-out 0.3s;
+}
+
+.contents-lobby a p:hover {
+    font-weight: 500;
+    transform: translateX(10px);
+}
+
+.p-body {
+    margin-bottom: 7rem;
+}
+
+.partnership {
+    margin-top: 3rem;
+}
+
+.details1 {
+    font-size: 17px;
+    margin-top: 70px;
+    text-indent: 70px;
+}
+
+.details2 {
+    font-size: 17px;
+    text-indent: 70px;
+}
+
+.pagination {
+    display: inline-block;
+  }
+  
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .img-hq {
+    margin-top: 40px;
+  }
+
+  .pagination a:hover {
+    color: #4CAF50;
+  }
+
+  .text p:hover {
+    color: green;
+  }
+
+  /* enrollment section page */
+
+  .edit-style li:hover {
+    color: green;
+  }
+
+  .edit-style p:hover {
+    color: green;
+  }
+
+  .e-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 9rem;
+    padding-top: 2rem;
+  }
+
+  /* updates and news page  */
+#update-page {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+.upd-board {
+    transition: 0.6s;
+}
+
+.upd-board:hover {
+    transform: translateX(10px);
+}
+
+/* students page  */
+ 
+.s-access{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 50px;
+}
+
+.s-body {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    justify-content: center;
+}
+
+.access {
+    border-radius: 10px;
+    position: relative;
+    overflow:hidden;
+}
+
+.access img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    height: auto;
+    transition: transform 0.5s;
+}
+
+/* form page  */
+
+.form {
+    margin: 7rem 0 7rem 0;
+}
+
+/* back to top btn  */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: gray;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+
+  #myBtn:hover {
+    background-color: greenyellow;
+  }
+
+
+@media screen and (max-width: 523px){
+    .header-name {
+        font-size: 17px !important;
+        margin-top: -5px;
+    }
+    #title-quote {
+        padding-top: 5px;
+        font-size: 12px !important;
+        margin-bottom: -10px;
+    }
+
+    .form-body {
+        padding: 0;
+        margin: 40px;
+    }
+}
+
+
+@media screen and (max-width: 767px){
+    .header-name {
+        font-size: 20px;
+    }
+    #title-quote {
+        padding-top: 5px;
+        font-size: small;
+    }
+    .btn-enroll {
+        font-size: small;
+        margin-top: 5px ;
+        margin-bottom: -10px;
+    }
+
+    .btn-enroll button {
+        border: 2px solid #fff;
+        box-shadow: 0px -2px 3px 1px inset;
+        border-radius: 5px;
+        padding: 7px 15px !important;
+        font-weight: 600;
+    }
+
+    .video-clips {
+        height: 250px;
+    }
+
+    #main-body {
+        margin-top: -7rem;
+    }
+
+    .branch-img {
+        margin-top: -40px;
+    }
+
+    #campus h1 {
+        font-size: 30px;
+    }
+
+    .campus {
+        margin-top: -80px;
+    }
+
+    #jpi-updates {
+        margin-top: -90px;
+    }
+
+    #about {
+        margin-top: 40px !important;
+    }
+
+    #about .about-card {
+        margin-top: 20px;
+    }
+    .design-line {
+        margin-top: 50px;
+    }
+    #services {
+        margin: 10px 10px 60px 10px;
+    }
+
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 12px;
+        border: none;
+        outline: none;
+        background-color: gray;
+        color: black;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 5px;
+      }
+    
+      #myBtn:hover {
+        background-color: greenyellow;
+      }
+      .t-content {
+        display: none;
+
+      }
+      .contents-lobby {
+        display: none;
+      }
+
+      .h-body {
+        margin-top: -70px !important;
+      }
+      .about-details {
+        margin-top: -40px !important;
+      }
+
+      #myTabContent {
+        margin-top: -60px !important;
+      }
+
+      .e-btn {
+        margin-bottom: 70px !important;
+      }
+
+      .register-left {
+        display: none;
+      }
+      .register-right {
+        margin-top: 3rem !important;
+      }
+
+      .c-vision {
+        margin-top: 3rem !important;
+      }
+
+      .form-body {
+        padding: 0;
+        margin: 60px 10px 7rem 20px;
+      }
+
+      .form-title {
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+}
+
+    @media screen and (min-width: 767px) and (max-width: 1023px) {
+        .header-name {
+            font-size: 25px;
+        }
+        #title-quote {
+            padding-top: 5px;
+            font-size: 20;
+        }
+        .btn-enroll {
+            font-size: medium;
+            margin-bottom: -17px;
+        }
+
+        .btn-enroll button {
+            border: 2px solid #fff;
+            box-shadow: 0px -2px 3px 1px inset;
+            border-radius: 5px;
+            padding: 7px 15px !important;
+            font-weight: 600;
+        }
+
+        .e-btn {
+            margin-bottom: 70px !important;
+          }
+    }
+
+  
